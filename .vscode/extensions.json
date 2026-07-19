@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "bradlc.vscode-tailwindcss",
+    "naumovs.color-highlight",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-complete-tag",
+    "formulahendry.auto-rename-tag",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}

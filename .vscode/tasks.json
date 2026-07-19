@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "确保 Vite 已启动",
+            "type": "shell",
+            "command": "node",
+            "args": ["${workspaceFolder}/.vscode/scripts/ensure-vite.cjs"],
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "always"
+            }
+        }
+    ]
+}
