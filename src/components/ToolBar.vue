@@ -5,7 +5,9 @@
     这里使用 calc(100vh - 40px) 并配合 position: sticky 或固定定位
     为保证通用性，我们使用 height: 100% 并由父容器约束。
   -->
-  <div class="tool-bar flex flex-col items-center py-2 bg-[#1c1c1c] text-white w-15 border-r border-gray-700">
+  <div
+    class="tool-bar flex flex-col items-center py-2 bg-[#1c1c1c] text-white w-15 border-r border-gray-700"
+  >
     <!-- 工具图标列表 -->
     <div
       v-for="tool in tools"
@@ -30,10 +32,10 @@
 <script setup>
 import { ref } from 'vue'
 import {
-  FolderOpened,   // 资源管理器
-  Search,         // 搜索
-  Document,       // 源代码管理器（Git）
-  Monitor         // 运行和调试（可用 Monitor 或 VideoPlay）
+  FolderOpened, // 资源管理器
+  Search, // 搜索
+  Document, // 源代码管理器（Git）
+  Monitor // 运行和调试（可用 Monitor 或 VideoPlay）
 } from '@element-plus/icons-vue'
 
 // 工具列表配置：名称、显示标签、图标组件
@@ -73,7 +75,9 @@ const toggleTool = (name) => {
 /* 每个图标按钮的尺寸和悬停过渡 */
 .tool-icon {
   font-size: 20px;
-  transition: background-color 0.2s, color 0.2s;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
 }
 
 /* 激活状态背景微光，无额外的边框，保持简洁 */

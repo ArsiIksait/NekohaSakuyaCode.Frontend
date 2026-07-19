@@ -90,7 +90,7 @@
     </el-menu>
 
     <!-- ========== 右侧操作区：全屏按钮 + 用户头像 ========== -->
-   <div class="flex items-center gap-3 px-4">
+    <div class="flex items-center gap-3 px-4">
       <!-- 用户头像 -->
       <el-avatar
         :size="32"
@@ -128,11 +128,10 @@ const toggleFullscreen = () => {
   if (!document.fullscreenElement) {
     // 进入全屏
     document.documentElement.requestFullscreen?.() ||
-    document.documentElement.webkitRequestFullscreen?.()
+      document.documentElement.webkitRequestFullscreen?.()
   } else {
     // 退出全屏
-    document.exitFullscreen?.() ||
-    document.webkitExitFullscreen?.()
+    document.exitFullscreen?.() || document.webkitExitFullscreen?.()
   }
 }
 
@@ -189,14 +188,14 @@ onUnmounted(() => {
 
 /* 弹出菜单中的菜单项样式，设置菜单项的文本颜色 */
 :global(.el-popper .el-menu--popup .el-menu-item) {
-  color: #ffffff !important;   /* 白色 */
+  color: #ffffff !important; /* 白色 */
   font-size: 13px;
 }
 
 /* 弹出菜单项悬停效果：淡蓝色背景 + 亮蓝色文字 */
 :global(.el-menu--popup .el-menu-item:hover) {
   background-color: rgba(96, 165, 250, 0.15) !important; /* 半透明 blue-400 */
-  color: #60a5fa !important;            /* blue-400 */
+  color: #60a5fa !important; /* blue-400 */
 }
 
 /* 水平菜单的子菜单项之间无底部边框（去除默认分割线） */

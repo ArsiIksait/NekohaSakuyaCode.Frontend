@@ -12,9 +12,13 @@ dist
 dist-ssr
 *.local
 
+# 忽略 unplugin-auto-import 生成的类型声明文件
+auto-imports.d.ts
+# 忽略 unplugin-vue-components 生成的组件类型声明文件
+components.d.ts
+
 # Editor directories and files
 !.vscode/*
-!.vscode/extensions.json
 .idea
 .DS_Store
 *.suo

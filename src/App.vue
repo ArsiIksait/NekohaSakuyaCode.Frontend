@@ -25,7 +25,8 @@ const handleToolClick = (toolName) => {
 
 <style>
 /* 全局重置：让根元素占满视口 */
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
